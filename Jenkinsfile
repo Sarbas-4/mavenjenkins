@@ -7,7 +7,7 @@
         stage('Clean') {
             steps {
                 echo 'Cleaning..'
-                bat 'mvn -B -DskipTests clean'
+                sh 'mvn -B -DskipTests clean'
             }
         }
         stage('Test') {
