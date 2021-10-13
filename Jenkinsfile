@@ -4,12 +4,12 @@
   }
     agent any
     stages {
-        stage('Clean') {
-            steps {
-                echo 'Cleaning..'
-                bat 'mvn -B -DskipTests clean'
-            }
-        }
+        // stage('Clean') {
+        //     steps {
+        //         echo 'Cleaning..'
+        //         bat 'mvn -B -DskipTests clean'
+        //     }
+        // }
         stage('Test') {
             steps {
                 echo 'Testing..'
