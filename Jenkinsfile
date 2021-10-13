@@ -3,13 +3,13 @@
     maven 'Maven3.8.3'
   }
     agent any
-    stages {
-        stage('Clean') {
-            steps {
-                echo 'Cleaning..'
-                bat 'mvn -B -DskipTests clean'
-            }
-        }
+    // stages {
+    //     stage('Clean') {
+    //         steps {
+    //             echo 'Cleaning..'
+    //             bat 'mvn -B -DskipTests clean'
+    //         }
+    //     }
         stage('Test') {
             steps {
                 echo 'Testing..'
